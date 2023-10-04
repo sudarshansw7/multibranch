@@ -45,15 +45,5 @@ pipeline
                 }
             }
         }
-        stage('contdelivery')
-        {
-            steps
-            {
-                script
-                {
-                    cicd.deploy("declarativepipelineshared","172.31.90.172","prodapp")
-                }
-            }
-        }
     }
 }
